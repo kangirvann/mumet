@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Sederhana</title>
+    <link rel="stylesheet" href="porto/porto.css">
+</head>
+<body>
+    <header>
+        <h1>Portofolio</h1>
+    </header>
+    <main>
+        <!-- <section class="portfolio-list">
+            <h3>Daftar Portofolio</h3>
+            <div id="portfolioContainer" class="portfolio-grid"></div> -->
+        <!-- </section>   -->     
+        <section class="profile">
+            <img src="imgHome.jpeg" alt="Foto Profil" class="profile-picture" onclick="openModal(this)">
+            <h2>Akhmad Irvan Ferdiansyah</h2>
+            <p>Deskripsi singkat tentang diri Anda. Misalnya, profesi atau keahlian utama Anda.</p>
+        </section>
+        <section class="portfolio">
+            <h3>Proyek</h3>
+            <div class="projects">
+                <div class="project-card">
+                    <h4>Proyek 1</h4>
+                    <p>Deskripsi singkat proyek.</p>
+                    <a href="" target="_blank">Lihat Detail</a>
+                </div>
+                <div class="project-card">
+                    <h4>Proyek 2</h4>
+                    <p>Deskripsi singkat proyek.</p>
+                    <a href="" target="_blank">Lihat Detail</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Kang Irvan. Dibuat dengan cinta 💖</p>
+    </footer>
+
+    <!-- Modal untuk zoom gambar -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <script src="porto/porto.js"></script>
+</body>
+</html>

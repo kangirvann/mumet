@@ -1,0 +1,105 @@
+/* Warna Dasar */
+:root {
+    --primary-color: #ffafcc; /* Pink pastel */
+    --secondary-color: #bde0fe; /* Biru pastel */
+    --accent-color: #ff6f91; /* Pink terang */
+    --text-color: #333333; /* Abu-abu gelap */
+    --background-color: #f8edeb; /* Latar belakang krem pastel */
+    --list-bg-color: #ffffff; /* Latar belakang elemen list */
+}
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+main {
+    padding: 20px;
+}
+
+.portfolio-list {
+    text-align: center;
+}
+
+.portfolio-list h3 {
+    color: var(--primary-color);
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+#portfolioList {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.portfolio-item {
+    background-color: var(--list-bg-color);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.portfolio-item h4 {
+    color: var(--accent-color);
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.portfolio-item p {
+    color: var(--text-color);
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.portfolio-item a {
+    text-decoration: none;
+    color: white;
+    background-color: var(--accent-color);
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.portfolio-item a:hover {
+    background-color: var(--primary-color);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 0;
+    margin-top: 20px;
+}

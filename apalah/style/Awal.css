@@ -1,0 +1,145 @@
+/* Reset */
+body, h1, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  /* Container */
+  .container {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+  }
+  
+  .container:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    width: 250px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .sidebar:hover {
+    background: rgba(0, 0, 0, 0.9);
+  }
+  
+  .sidebar h2 {
+    font-size: 26px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #FFD700;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  .menu li {
+    margin: 20px 0;
+  }
+  
+  .menu a {
+    color: #fff;
+    font-size: 20px;
+    display: block;
+    padding: 8px;
+    border-radius: 8px;
+    transition: 0.3s ease;
+  }
+  
+  .menu a:hover {
+    color: #FFD700;
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateX(10px);
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  /* Main Content */
+  .content {
+    flex: 1;
+    padding: 30px;
+    color: #e6e6e6;
+  }
+  
+  #content-area {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  #content-area h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    font-weight: 700;
+  }
+  
+  #content-area p {
+    font-size: 20px;
+    opacity: 0.9;
+    line-height: 1.5;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  /* Responsif untuk layar kecil (tablet dan ponsel) */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .sidebar {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .menu li {
+      margin: 10px 0;
+    }
+  
+    .content {
+      padding: 15px;
+    }
+  }
+  
+  /* Responsif untuk layar sangat kecil (ponsel) */
+  @media (max-width: 480px) {
+    .sidebar h2 {
+      font-size: 22px;
+    }
+  
+    .menu a {
+      font-size: 16px;
+    }
+  
+    #content-area h1 {
+      font-size: 28px;
+    }
+  
+    #content-area p {
+      font-size: 16px;
+    }
+  }
+  
